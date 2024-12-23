@@ -329,9 +329,7 @@
     },
     "6.5850": {
         "title": "Principles of Computer Systems",
-        "prerequisites": [
-            "Permission of instructor"
-        ]
+        "prerequisites": []
     },
     "6.1903": {
         "title": "Introduction to Low-level Programming in C and Assembly",
@@ -390,7 +388,8 @@
         "title": "Hardware Architecture for Deep Learning",
         "prerequisites": [
             "6.1910",
-            "6.3000 or 6.3900"
+            "6.3000",
+            "6.3900"
         ]
     },
     "6.5940": {
@@ -427,7 +426,12 @@
     "6.4110": {
         "title": "Representation, Inference, and Reasoning in AI",
         "prerequisites": [
-            "(16.09 and 16.410) or (6.1010, 6.1210, and (6.3700 or 6.3800))"
+            "16.09",
+            "16.410",
+            "6.1010",
+            "6.1210",
+            "6.3700",
+            "6.3800"
         ]
     },
     "6.4120": {
@@ -462,7 +466,8 @@
     "6.8110": {
         "title": "Cognitive Robotics",
         "prerequisites": [
-            "6.4100 or 16.413",
+            "6.4100",
+            "16.413",
             "6.1200",
             "6.3700",
             "16.09"
@@ -501,7 +506,8 @@
     "6.8200": {
         "title": "Sensorimotor Learning",
         "prerequisites": [
-            "6.3900 or 6.7900"
+            "6.3900",
+            "6.7900"
         ]
     },
     "6.8210": {
@@ -523,7 +529,7 @@
         "title": "Computational Design and Fabrication",
         "prerequisites": [
             "Calculus II (GIR)",
-            "(6.1010 or permission of instructor)"
+            "6.1010"
         ]
     },
     "6.8410": {
@@ -560,32 +566,31 @@
     },
     "6.4530": {
         "title": "Principles and Practice of Assistive Technology",
-        "prerequisites": [
-            "Permission of instructor"
-        ]
+        "prerequisites": []
     },
     "6.4550[J]": {
         "title": "Interactive Music Systems",
         "prerequisites": [
-            "(6.1010 and 21M.301)"
+            "6.1010",
+            "21M.301"
         ]
     },
     "6.4570": {
         "title": "Creating Video Games",
         "prerequisites": [
-            "6.100A or CMS.301"
+            "6.100A",
+            "CMS.301"
         ]
     },
     "6.4590": {
         "title": "Foundations of Information Policy",
-        "prerequisites": [
-            "Permission of instructor"
-        ]
+        "prerequisites": []
     },
     "6.8510": {
         "title": "Intelligent Multimodal User Interfaces",
         "prerequisites": [
-            "(6.1020 and 6.4100)"
+            "6.1020",
+            "6.4100"
         ]
     },
     "6.8530": {
@@ -709,8 +714,7 @@
             "6.100A",
             "6.3700",
             "6.3800",
-            "18.600",
-            "Permission of instructor"
+            "18.600"
         ]
     },
     "6.3730": {
@@ -724,8 +728,7 @@
             "6.3800",
             "14.30",
             "16.09",
-            "18.05",
-            "Permission of instructor"
+            "18.05"
         ]
     },
     "6.3732": {
@@ -739,8 +742,7 @@
             "6.3800",
             "14.30",
             "16.09",
-            "18.05",
-            "Permission of instructor"
+            "18.05"
         ]
     },
     "6.7700": {
@@ -840,5 +842,176 @@
             "6.3800",
             "18.05"
         ]
+    },
+    "6.3800": {
+        "title": "Introduction to Inference",
+        "prerequisites": [
+            "Calculus II (GIR)"
+        ],
+        "units": "4-4-4"
+    },
+    "6.7800": {
+        "title": "Inference and Information",
+        "prerequisites": [
+            "6.3700",
+            "6.3800",
+            "6.7700"
+        ],
+        "units": "4-0-8"
+    },
+    "6.7810": {
+        "title": "Algorithms for Inference",
+        "prerequisites": [
+            "18.06",
+            "6.3700",
+            "6.3800",
+            "6.7700"
+        ],
+        "units": "4-0-8"
+    },
+    "6.7820": {
+        "title": "Graphical Models: A Geometric, Algebraic, and Combinatorial Perspective",
+        "prerequisites": [
+            "6.3702",
+            "18.06"
+        ],
+        "units": "3-0-9"
+    },
+    "6.7830": {
+        "title": "Bayesian Modeling and Inference",
+        "prerequisites": [
+            "6.7700",
+            "6.7900"
+        ],
+        "units": "3-0-9"
+    },
+    "6.3900": {
+        "title": "Introduction to Machine Learning",
+        "prerequisites": [
+            "6.1010",
+            "6.1210",
+            "18.03",
+            "18.06",
+            "18.700",
+            "18.C06"
+        ],
+        "units": "4-0-8"
+    },
+    "6.3950": {
+        "title": "AI, Decision Making, and Society",
+        "prerequisites": [],
+        "corequisites": [
+            "6.1200",
+            "6.3700",
+            "6.3800",
+            "18.05",
+            "18.600"
+        ],
+        "units": "4-0-8"
+    },
+    "6.3952": {
+        "title": "AI, Decision Making, and Society (Graduate Version)",
+        "prerequisites": [],
+        "corequisites": [
+            "6.1200",
+            "6.3700",
+            "6.3800",
+            "18.05"
+        ],
+        "units": "4-0-8"
+    },
+    "6.7900": {
+        "title": "Machine Learning",
+        "prerequisites": [
+            "18.06",
+            "6.3700",
+            "6.3800",
+            "18.600"
+        ],
+        "units": "3-0-9"
+    },
+    "6.7910": {
+        "title": "Statistical Learning Theory and Applications",
+        "prerequisites": [
+            "6.3700",
+            "6.7900",
+            "18.06"
+        ],
+        "units": "3-0-9"
+    },
+    "6.7920": {
+        "title": "Reinforcement Learning: Foundations and Methods",
+        "prerequisites": [
+            "6.3700"
+        ],
+        "units": "4-0-8"
+    },
+    "6.7930": {
+        "title": "Machine Learning for Healthcare",
+        "prerequisites": [
+            "6.3900",
+            "6.4100",
+            "6.7810",
+            "6.7900",
+            "6.8611",
+            "9.520"
+        ],
+        "units": "4-0-8"
+    },
+    "6.7940": {
+        "title": "Dynamic Programming and Reinforcement Learning",
+        "prerequisites": [
+            "6.3700",
+            "18.600"
+        ],
+        "units": "4-0-8"
+    },
+    "6.7950": {
+        "title": "Advanced Topics in Control",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "6.7960": {
+        "title": "Deep Learning",
+        "prerequisites": [
+            "18.05",
+            "6.3720",
+            "6.3900",
+            "6.C01"
+        ],
+        "units": "3-0-9"
+    },
+    "6.8610": {
+        "title": "Quantitative Methods for Natural Language Processing",
+        "prerequisites": [
+            "6.3900",
+            "18.06",
+            "18.C06"
+        ],
+        "units": "3-0-9"
+    },
+    "6.8611": {
+        "title": "Quantitative Methods for Natural Language Processing (Graduate)",
+        "prerequisites": [
+            "6.3900",
+            "18.06",
+            "18.C06"
+        ],
+        "units": "4-0-11"
+    },
+    "6.8620": {
+        "title": "Spoken Language Processing",
+        "prerequisites": [
+            "6.3000",
+            "6.3900"
+        ],
+        "units": "3-1-8"
+    },
+    "6.8630": {
+        "title": "Natural Language and the Computer Representation of Knowledge",
+        "prerequisites": [
+            "6.4100"
+        ],
+        "units": "3-3-6"
     }
 }

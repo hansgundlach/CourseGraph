@@ -1,0 +1,423 @@
+{
+    "8.006": {
+        "title": "Exploring Physics Using Python",
+        "prerequisites": [
+            "Coreq: 6.100L"
+        ],
+        "units": "2-0-1"
+    },
+    "8.01": {
+        "title": "Physics I",
+        "prerequisites": [],
+        "units": "3-2-7"
+    },
+    "8.011": {
+        "title": "Physics I",
+        "prerequisites": [],
+        "units": "5-0-7"
+    },
+    "8.012": {
+        "title": "Physics I",
+        "prerequisites": [],
+        "units": "5-0-7"
+    },
+    "8.01L": {
+        "title": "Physics I",
+        "prerequisites": [],
+        "units": "3-2-7"
+    },
+    "8.02": {
+        "title": "Physics II",
+        "prerequisites": [
+            "Calculus I",
+            "8.01"
+        ],
+        "units": "3-2-7"
+    },
+    "8.021": {
+        "title": "Physics II",
+        "prerequisites": [
+            "Calculus I",
+            "8.01"
+        ],
+        "units": "5-0-7"
+    },
+    "8.022": {
+        "title": "Physics II",
+        "prerequisites": [
+            "8.01",
+            "Calculus II"
+        ],
+        "units": "5-0-7"
+    },
+    "8.03": {
+        "title": "Physics III",
+        "prerequisites": [
+            "Calculus II",
+            "8.02"
+        ],
+        "units": "5-0-7"
+    },
+    "8.033": {
+        "title": "Relativity",
+        "prerequisites": [
+            "Calculus II",
+            "8.02"
+        ],
+        "units": "5-0-7"
+    },
+    "8.04": {
+        "title": "Quantum Physics I",
+        "prerequisites": [
+            "8.03",
+            "18.03",
+            "18.032"
+        ],
+        "units": "5-0-7"
+    },
+    "8.041": {
+        "title": "Quantum Physics I",
+        "prerequisites": [
+            "8.03",
+            "18.03",
+            "18.032"
+        ],
+        "units": "2-0-10"
+    },
+    "8.044": {
+        "title": "Statistical Physics I",
+        "prerequisites": [
+            "8.03",
+            "18.03"
+        ],
+        "units": "5-0-7"
+    },
+    "8.05": {
+        "title": "Quantum Physics II",
+        "prerequisites": [
+            "8.04",
+            "8.041"
+        ],
+        "units": "5-0-7"
+    },
+    "8.051": {
+        "title": "Quantum Physics II",
+        "prerequisites": [
+            "8.04"
+        ],
+        "units": "2-0-10"
+    },
+    "8.06": {
+        "title": "Quantum Physics III",
+        "prerequisites": [
+            "8.05"
+        ],
+        "units": "5-0-7"
+    },
+    "8.07": {
+        "title": "Electromagnetism II",
+        "prerequisites": [
+            "8.03",
+            "18.03"
+        ],
+        "units": "4-0-8"
+    },
+    "8.08": {
+        "title": "Statistical Physics II",
+        "prerequisites": [
+            "8.044",
+            "8.05"
+        ],
+        "units": "4-0-8"
+    },
+    "8.09": {
+        "title": "Classical Mechanics III",
+        "prerequisites": [
+            "8.223"
+        ],
+        "units": "4-0-8"
+    },
+    "8.10": {
+        "title": "Exploring and Communicating Physics (and other) Frontiers",
+        "prerequisites": [],
+        "units": "2-0-0"
+    },
+    "8.13": {
+        "title": "Experimental Physics I",
+        "prerequisites": [
+            "8.04"
+        ],
+        "units": "0-6-12"
+    },
+    "8.14": {
+        "title": "Experimental Physics II",
+        "prerequisites": [
+            "8.05",
+            "8.13"
+        ],
+        "units": "0-6-12"
+    },
+    "8.16": {
+        "title": "Data Science in Physics",
+        "prerequisites": [
+            "8.04",
+            "6.100A",
+            "6.100B"
+        ],
+        "units": "3-0-9"
+    },
+    "8.20": {
+        "title": "Introduction to Special Relativity",
+        "prerequisites": [
+            "Calculus I",
+            "Physics I"
+        ],
+        "units": "2-0-7"
+    },
+    "8.21": {
+        "title": "Physics of Energy",
+        "prerequisites": [
+            "Calculus II",
+            "Chemistry",
+            "8.02"
+        ],
+        "units": "5-0-7"
+    },
+    "8.223": {
+        "title": "Classical Mechanics II",
+        "prerequisites": [
+            "Calculus II",
+            "8.01"
+        ],
+        "units": "2-0-4"
+    },
+    "8.224": {
+        "title": "Exploring Black Holes: General Relativity and Astrophysics",
+        "prerequisites": [
+            "8.033",
+            "8.20"
+        ],
+        "units": "3-0-9"
+    },
+    "8.225": {
+        "title": "Einstein, Oppenheimer, Feynman: Physics in the 20th Century",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "8.251": {
+        "title": "String Theory for Undergraduates",
+        "prerequisites": [
+            "8.033",
+            "8.044",
+            "8.05"
+        ],
+        "units": "4-0-8"
+    },
+    "8.276": {
+        "title": "Nuclear and Particle Physics",
+        "prerequisites": [
+            "8.033",
+            "8.04"
+        ],
+        "units": "4-0-8"
+    },
+    "8.282": {
+        "title": "Introduction to Astronomy",
+        "prerequisites": [
+            "8.01"
+        ],
+        "units": "3-0-6"
+    },
+    "8.284": {
+        "title": "Modern Astrophysics",
+        "prerequisites": [
+            "8.04"
+        ],
+        "units": "3-0-9"
+    },
+    "8.286": {
+        "title": "The Early Universe",
+        "prerequisites": [
+            "8.02",
+            "18.03"
+        ],
+        "units": "3-0-9"
+    },
+    "8.287[J]": {
+        "title": "Observational Techniques of Optical Astronomy",
+        "prerequisites": [
+            "8.282",
+            "12.409",
+            "or other introductory astronomy course"
+        ],
+        "units": "3-4-8"
+    },
+    "8.290[J]": {
+        "title": "Extrasolar Planets: Physics and Detection Techniques",
+        "prerequisites": [
+            "8.03",
+            "18.03"
+        ],
+        "units": "3-0-9"
+    },
+    "8.292[J]": {
+        "title": "Fluid Physics",
+        "prerequisites": [
+            "5.60",
+            "8.044"
+        ],
+        "units": "3-0-9"
+    },
+    "8.295": {
+        "title": "Practical Experience in Physics",
+        "prerequisites": [],
+        "units": "0-1-0 [P/D/F]"
+    },
+    "8.298": {
+        "title": "Selected Topics in Physics",
+        "prerequisites": [],
+        "units": "Arranged"
+    },
+    "8.309": {
+        "title": "Classical Mechanics III",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "8.311": {
+        "title": "Electromagnetic Theory I",
+        "prerequisites": [
+            "8.07"
+        ],
+        "units": "4-0-8"
+    },
+    "8.315": {
+        "title": "Mathematical Methods in Nanophotonics",
+        "prerequisites": [
+            "8.07",
+            "18.303"
+        ],
+        "units": "3-0-9"
+    },
+    "8.316": {
+        "title": "Data Science in Physics",
+        "prerequisites": [
+            "8.04",
+            "6.100A",
+            "6.100B"
+        ],
+        "units": "3-0-9"
+    },
+    "8.321": {
+        "title": "Quantum Theory I",
+        "prerequisites": [
+            "8.05"
+        ],
+        "units": "4-0-8"
+    },
+    "8.322": {
+        "title": "Quantum Theory II",
+        "prerequisites": [
+            "8.07",
+            "8.321"
+        ],
+        "units": "4-0-8"
+    },
+    "8.323": {
+        "title": "Relativistic Quantum Field Theory I",
+        "prerequisites": [
+            "8.321"
+        ],
+        "units": "4-0-8"
+    },
+    "8.324": {
+        "title": "Relativistic Quantum Field Theory II",
+        "prerequisites": [
+            "8.322",
+            "8.323"
+        ],
+        "units": "4-0-8"
+    },
+    "8.325": {
+        "title": "Relativistic Quantum Field Theory III",
+        "prerequisites": [
+            "8.324"
+        ],
+        "units": "4-0-8"
+    },
+    "8.333": {
+        "title": "Statistical Mechanics I",
+        "prerequisites": [
+            "8.044",
+            "8.05"
+        ],
+        "units": "4-0-8"
+    },
+    "8.334": {
+        "title": "Statistical Mechanics II",
+        "prerequisites": [
+            "8.333"
+        ],
+        "units": "4-0-8"
+    },
+    "8.351": {
+        "title": "Classical Mechanics: A Computational Approach",
+        "prerequisites": [
+            "Physics I",
+            "18.03"
+        ],
+        "units": "3-3-6"
+    },
+    "8.370": {
+        "title": "Quantum Computation",
+        "prerequisites": [
+            "8.05",
+            "18.06",
+            "18.700",
+            "18.701",
+            "18.C06"
+        ],
+        "units": "3-0-9"
+    },
+    "8.371": {
+        "title": "Quantum Information Science",
+        "prerequisites": [
+            "18.435"
+        ],
+        "units": "3-0-9"
+    },
+    "8.372": {
+        "title": "Quantum Information Science III",
+        "prerequisites": [
+            "8.371"
+        ],
+        "units": "3-0-9"
+    },
+    "8.381": {
+        "title": "Selected Topics in Theoretical Physics",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "8.811": {
+        "title": "Particle Physics",
+        "prerequisites": [
+            "8.701"
+        ],
+        "units": "3-0-9"
+    },
+    "8.821": {
+        "title": "String Theory",
+        "prerequisites": [
+            "8.324"
+        ],
+        "units": "3-0-9"
+    },
+    "8.962": {
+        "title": "General Relativity",
+        "prerequisites": [
+            "8.07",
+            "18.03",
+            "18.06"
+        ],
+        "units": "4-0-8"
+    }
+}

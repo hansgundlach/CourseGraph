@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 750px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "14.00", "label": "Undergraduate Internship in Economics", "shape": "dot", "title": "Course: 14.00"}, {"color": "#97c2fc", "id": "14.000", "label": "Graduate Internship in Economics", "shape": "dot", "title": "Course: 14.000"}, {"color": "#97c2fc", "id": "14.001", "label": "Design of Policy Summer Internship", "shape": "dot", "title": "Course: 14.001"}, {"color": "#97c2fc", "id": "14.003", "label": "Microeconomic Theory and Public Policy", "shape": "dot", "title": "Course: 14.003"}, {"color": "#97c2fc", "id": "14.009", "label": "Economics and Society\u0027s Toughest Problems", "shape": "dot", "title": "Course: 14.009"}, {"color": "#97c2fc", "id": "14.01", "label": "Principles of Microeconomics", "shape": "dot", "title": "Course: 14.01"}, {"color": "#97c2fc", "id": "14.02", "label": "Principles of Macroeconomics", "shape": "dot", "title": "Course: 14.02"}, {"color": "#97c2fc", "id": "14.03", "label": "Microeconomic Theory and Public Policy", "shape": "dot", "title": "Course: 14.03"}, {"color": "#97c2fc", "id": "14.04", "label": "Intermediate Microeconomic Theory", "shape": "dot", "title": "Course: 14.04"}, {"color": "#97c2fc", "id": "14.05", "label": "Intermediate Macroeconomics", "shape": "dot", "title": "Course: 14.05"}, {"color": "#97c2fc", "id": "14.06", "label": "Advanced Macroeconomics", "shape": "dot", "title": "Course: 14.06"}, {"color": "#97c2fc", "id": "14.08", "label": "Technical Topics in Economics", "shape": "dot", "title": "Course: 14.08"}, {"color": "#97c2fc", "id": "14.09", "label": "Reading Seminar in Economics", "shape": "dot", "title": "Course: 14.09"}, {"color": "#97c2fc", "id": "14.10", "label": "Reading Seminar in Economics", "shape": "dot", "title": "Course: 14.10"}, {"color": "#97c2fc", "id": "14.11", "label": "Topics in Economics", "shape": "dot", "title": "Course: 14.11"}, {"color": "#97c2fc", "id": "14.12", "label": "Economic Applications of Game Theory", "shape": "dot", "title": "Course: 14.12"}, {"color": "#97c2fc", "id": "14.121", "label": "Microeconomic Theory I", "shape": "dot", "title": "Course: 14.121"}, {"color": "#97c2fc", "id": "14.122", "label": "Microeconomic Theory II", "shape": "dot", "title": "Course: 14.122"}, {"color": "#97c2fc", "id": "14.123", "label": "Microeconomic Theory III", "shape": "dot", "title": "Course: 14.123"}, {"color": "#97c2fc", "id": "14.124", "label": "Microeconomic Theory IV", "shape": "dot", "title": "Course: 14.124"}, {"color": "#97c2fc", "id": "14.125", "label": "Market Design", "shape": "dot", "title": "Course: 14.125"}, {"color": "#97c2fc", "id": "14.126", "label": "Game Theory", "shape": "dot", "title": "Course: 14.126"}, {"color": "#97c2fc", "id": "14.127", "label": "Advanced Game Theory", "shape": "dot", "title": "Course: 14.127"}, {"color": "#97c2fc", "id": "14.129", "label": "Advanced Contract Theory", "shape": "dot", "title": "Course: 14.129"}, {"color": "#97c2fc", "id": "14.13", "label": "Psychology and Economics", "shape": "dot", "title": "Course: 14.13"}, {"color": "#97c2fc", "id": "14.130", "label": "Reading Economic Theory", "shape": "dot", "title": "Course: 14.130"}, {"color": "#97c2fc", "id": "14.137", "label": "Psychology and Economics", "shape": "dot", "title": "Course: 14.137"}, {"color": "#97c2fc", "id": "14.147", "label": "Topics in Game Theory", "shape": "dot", "title": "Course: 14.147"}, {"color": "#97c2fc", "id": "14.15", "label": "Networks", "shape": "dot", "title": "Course: 14.15"}, {"color": "#97c2fc", "id": "14.16", "label": "Strategy and Information", "shape": "dot", "title": "Course: 14.16"}, {"color": "#97c2fc", "id": "14.160", "label": "Behavioral Economics", "shape": "dot", "title": "Course: 14.160"}, {"color": "#97c2fc", "id": "14.163", "label": "Algorithms and Behavioral Science", "shape": "dot", "title": "Course: 14.163"}, {"color": "#97c2fc", "id": "14.18", "label": "Mathematical Economic Modeling", "shape": "dot", "title": "Course: 14.18"}, {"color": "#97c2fc", "id": "14.19", "label": "Market Design", "shape": "dot", "title": "Course: 14.19"}, {"color": "#97c2fc", "id": "14.20", "label": "Industrial Organization: Competitive Strategy and Public Policy", "shape": "dot", "title": "Course: 14.20"}, {"color": "#97c2fc", "id": "14.200", "label": "Industrial Organization: Competitive Strategy and Public Policy", "shape": "dot", "title": "Course: 14.200"}, {"color": "#97c2fc", "id": "14.27", "label": "Economics of Digitization", "shape": "dot", "title": "Course: 14.27"}, {"color": "#97c2fc", "id": "14.270", "label": "Economics of Digitization", "shape": "dot", "title": "Course: 14.270"}, {"color": "#97c2fc", "id": "14.271", "label": "Industrial Organization I", "shape": "dot", "title": "Course: 14.271"}, {"color": "#97c2fc", "id": "14.272", "label": "Industrial Organization II", "shape": "dot", "title": "Course: 14.272"}, {"color": "#97c2fc", "id": "14.273", "label": "Advanced Topics in Industrial Organization", "shape": "dot", "title": "Course: 14.273"}, {"color": "#97c2fc", "id": "14.26", "label": "Organizational Economics", "shape": "dot", "title": "Course: 14.26"}, {"color": "#97c2fc", "id": "14.260", "label": "Organizational Economics", "shape": "dot", "title": "Course: 14.260"}, {"color": "#97c2fc", "id": "14.282", "label": "Introduction to Organizational Economics", "shape": "dot", "title": "Course: 14.282"}, {"color": "#97c2fc", "id": "14.283", "label": "Advanced Topics in Organizational Economics I", "shape": "dot", "title": "Course: 14.283"}, {"color": "#97c2fc", "id": "14.284", "label": "Advanced Topics in Organizational Economics II", "shape": "dot", "title": "Course: 14.284"}, {"color": "#97c2fc", "id": "14.30", "label": "Introduction to Statistical Methods in Economics", "shape": "dot", "title": "Course: 14.30"}, {"color": "#97c2fc", "id": "14.300", "label": "Introduction to Statistical Methods in Economics", "shape": "dot", "title": "Course: 14.300"}, {"color": "#97c2fc", "id": "14.310", "label": "Data Analysis for Social Scientists", "shape": "dot", "title": "Course: 14.310"}, {"color": "#97c2fc", "id": "14.32", "label": "Econometric Data Science", "shape": "dot", "title": "Course: 14.32"}, {"color": "#97c2fc", "id": "14.320", "label": "Econometric Data Science", "shape": "dot", "title": "Course: 14.320"}, {"color": "#97c2fc", "id": "14.33", "label": "Research and Communication in Economics: Topics, Methods, and Implementation", "shape": "dot", "title": "Course: 14.33"}, {"color": "#97c2fc", "id": "14.35", "label": "Why Markets Fail", "shape": "dot", "title": "Course: 14.35"}, {"color": "#97c2fc", "id": "14.36", "label": "Advanced Econometrics", "shape": "dot", "title": "Course: 14.36"}, {"color": "#97c2fc", "id": "14.38", "label": "Inference on Causal and Structural Parameters Using ML and AI", "shape": "dot", "title": "Course: 14.38"}, {"color": "#97c2fc", "id": "14.380", "label": "Statistical Method in Economics", "shape": "dot", "title": "Course: 14.380"}, {"color": "#97c2fc", "id": "14.381", "label": "Estimation and Inference for Linear Causal and Structural Models", "shape": "dot", "title": "Course: 14.381"}, {"color": "#97c2fc", "id": "14.382", "label": "Econometrics", "shape": "dot", "title": "Course: 14.382"}, {"color": "#97c2fc", "id": "14.383", "label": "High-Dimensional Econometrics", "shape": "dot", "title": "Course: 14.383"}, {"color": "#97c2fc", "id": "14.384", "label": "Time Series Analysis", "shape": "dot", "title": "Course: 14.384"}, {"color": "#97c2fc", "id": "14.385", "label": "Nonlinear Econometric Analysis", "shape": "dot", "title": "Course: 14.385"}, {"color": "#97c2fc", "id": "14.386", "label": "New Econometric Methods", "shape": "dot", "title": "Course: 14.386"}, {"color": "#97c2fc", "id": "14.387", "label": "Applied Econometrics", "shape": "dot", "title": "Course: 14.387"}, {"color": "#97c2fc", "id": "14.388", "label": "Inference on Causal and Structural Parameters Using ML and AI", "shape": "dot", "title": "Course: 14.388"}, {"color": "#97c2fc", "id": "14.39", "label": "Large-Scale Decision-Making and Inference", "shape": "dot", "title": "Course: 14.39"}, {"color": "#97c2fc", "id": "14.390", "label": "Large-Scale Decision-Making and Inference", "shape": "dot", "title": "Course: 14.390"}, {"color": "#97c2fc", "id": "14.391", "label": "Workshop in Economic Research", "shape": "dot", "title": "Course: 14.391"}, {"color": "#97c2fc", "id": "14.392", "label": "Workshop in Economic Research", "shape": "dot", "title": "Course: 14.392"}, {"color": "#97c2fc", "id": "14.399", "label": "Seminar in Data Economics and Development Policy", "shape": "dot", "title": "Course: 14.399"}, {"color": "#97c2fc", "id": "14.41", "label": "Public Finance and Public Policy", "shape": "dot", "title": "Course: 14.41"}, {"color": "#97c2fc", "id": "14.410", "label": "Public Finance and Public Policy", "shape": "dot", "title": "Course: 14.410"}, {"color": "#97c2fc", "id": "14.416", "label": "Asset Pricing", "shape": "dot", "title": "Course: 14.416"}, {"color": "#97c2fc", "id": "14.42", "label": "Environmental Policy and Economics", "shape": "dot", "title": "Course: 14.42"}, {"color": "#97c2fc", "id": "14.420", "label": "Environmental Policy and Economics", "shape": "dot", "title": "Course: 14.420"}, {"color": "#97c2fc", "id": "14.43", "label": "Economics of Energy, Innovation, and Sustainability", "shape": "dot", "title": "Course: 14.43"}, {"color": "#97c2fc", "id": "14.44", "label": "Energy Economics and Policy", "shape": "dot", "title": "Course: 14.44"}, {"color": "#97c2fc", "id": "14.440", "label": "Advanced Corporate Finance", "shape": "dot", "title": "Course: 14.440"}, {"color": "#97c2fc", "id": "14.441", "label": "Corporate Finance", "shape": "dot", "title": "Course: 14.441"}, {"color": "#97c2fc", "id": "14.442", "label": "Advanced Asset Pricing", "shape": "dot", "title": "Course: 14.442"}, {"color": "#97c2fc", "id": "14.444", "label": "Energy Economics and Policy", "shape": "dot", "title": "Course: 14.444"}, {"color": "#97c2fc", "id": "14.448", "label": "Current Topics in Finance", "shape": "dot", "title": "Course: 14.448"}, {"color": "#97c2fc", "id": "14.449", "label": "Current Research in Financial Economics", "shape": "dot", "title": "Course: 14.449"}, {"color": "#97c2fc", "id": "14.45", "label": "Climate and Energy in the Global Economy", "shape": "dot", "title": "Course: 14.45"}, {"color": "#97c2fc", "id": "14.450", "label": "Climate and Energy in the Global Economy", "shape": "dot", "title": "Course: 14.450"}, {"color": "#97c2fc", "id": "14.451", "label": "Dynamic Optimization Methods with Applications", "shape": "dot", "title": "Course: 14.451"}, {"color": "#97c2fc", "id": "14.452", "label": "Economic Growth", "shape": "dot", "title": "Course: 14.452"}, {"color": "#97c2fc", "id": "14.453", "label": "Economic Fluctuations", "shape": "dot", "title": "Course: 14.453"}, {"color": "#97c2fc", "id": "14.454", "label": "Economic Crises", "shape": "dot", "title": "Course: 14.454"}, {"color": "#97c2fc", "id": "14.461", "label": "Advanced Macroeconomics I", "shape": "dot", "title": "Course: 14.461"}, {"color": "#97c2fc", "id": "14.462", "label": "Advanced Macroeconomics II", "shape": "dot", "title": "Course: 14.462"}, {"color": "#97c2fc", "id": "14.47", "label": "Global Energy: Politics, Markets, and Policy", "shape": "dot", "title": "Course: 14.47"}, {"color": "#97c2fc", "id": "14.471", "label": "Public Economics I", "shape": "dot", "title": "Course: 14.471"}, {"color": "#97c2fc", "id": "14.472", "label": "Public Economics II", "shape": "dot", "title": "Course: 14.472"}, {"color": "#97c2fc", "id": "14.475", "label": "Environmental Economics", "shape": "dot", "title": "Course: 14.475"}, {"color": "#97c2fc", "id": "14.54", "label": "International Trade", "shape": "dot", "title": "Course: 14.54"}, {"color": "#97c2fc", "id": "14.540", "label": "International Trade", "shape": "dot", "title": "Course: 14.540"}, {"color": "#97c2fc", "id": "14.581", "label": "International Economics I", "shape": "dot", "title": "Course: 14.581"}, {"color": "#97c2fc", "id": "14.582", "label": "International Economics II", "shape": "dot", "title": "Course: 14.582"}, {"color": "#97c2fc", "id": "14.64", "label": "Labor Economics and Public Policy", "shape": "dot", "title": "Course: 14.64"}, {"color": "#97c2fc", "id": "14.640", "label": "Labor Economics and Public Policy", "shape": "dot", "title": "Course: 14.640"}, {"color": "#97c2fc", "id": "14.661", "label": "Labor Economics I", "shape": "dot", "title": "Course: 14.661"}, {"color": "#97c2fc", "id": "14.661A", "label": "Labor Economics I", "shape": "dot", "title": "Course: 14.661A"}, {"color": "#97c2fc", "id": "14.662", "label": "Labor Economics II", "shape": "dot", "title": "Course: 14.662"}, {"color": "#97c2fc", "id": "14.662A", "label": "Labor Economics II", "shape": "dot", "title": "Course: 14.662A"}, {"color": "#97c2fc", "id": "14.70", "label": "Medieval Economic History in Comparative Perspective", "shape": "dot", "title": "Course: 14.70"}, {"color": "#97c2fc", "id": "14.73", "label": "The Challenge of World Poverty", "shape": "dot", "title": "Course: 14.73"}, {"color": "#97c2fc", "id": "14.74", "label": "Foundations of Development Policy", "shape": "dot", "title": "Course: 14.74"}, {"color": "#97c2fc", "id": "14.740", "label": "Foundations of Development Policy", "shape": "dot", "title": "Course: 14.740"}, {"color": "#97c2fc", "id": "14.75", "label": "Political Economy and Economic Development", "shape": "dot", "title": "Course: 14.75"}, {"color": "#97c2fc", "id": "14.750", "label": "Political Economy and Economic Development", "shape": "dot", "title": "Course: 14.750"}, {"color": "#97c2fc", "id": "14.76", "label": "Firms, Markets, Trade and Growth", "shape": "dot", "title": "Course: 14.76"}, {"color": "#97c2fc", "id": "14.760", "label": "Firms, Markets, Trade and Growth", "shape": "dot", "title": "Course: 14.760"}, {"color": "#97c2fc", "id": "14.770", "label": "Introduction to Collective Choice and Political Economy", "shape": "dot", "title": "Course: 14.770"}, {"color": "#97c2fc", "id": "14.771", "label": "Development Economics: Microeconomic Issues", "shape": "dot", "title": "Course: 14.771"}, {"color": "#97c2fc", "id": "14.772", "label": "Development Economics: Macroeconomics", "shape": "dot", "title": "Course: 14.772"}, {"color": "#97c2fc", "id": "14.773", "label": "Political Economy: Institutions and Development", "shape": "dot", "title": "Course: 14.773"}, {"color": "#97c2fc", "id": "14.775", "label": "Comparing Societies", "shape": "dot", "title": "Course: 14.775"}, {"color": "#97c2fc", "id": "14.78", "label": "Shaping the Future of Technology: From Early Agriculture to Artificial Intelligence", "shape": "dot", "title": "Course: 14.78"}, {"color": "#97c2fc", "id": "Permission of instructor", "label": "Prerequisite: Permission of instructor", "shape": "dot", "title": "Prerequisite: Permission of instructor"}, {"color": "#97c2fc", "id": "Permission of department", "label": "Prerequisite: Permission of department", "shape": "dot", "title": "Prerequisite: Permission of department"}, {"color": "#97c2fc", "id": "Calculus II (GIR)", "label": "Prerequisite: Calculus II (GIR)", "shape": "dot", "title": "Prerequisite: Calculus II (GIR)"}, {"color": "#97c2fc", "id": "6.041B", "label": "Prerequisite: 6.041B", "shape": "dot", "title": "Prerequisite: 6.041B"}, {"color": "#97c2fc", "id": "18.05", "label": "Prerequisite: 18.05", "shape": "dot", "title": "Prerequisite: 18.05"}, {"color": "#97c2fc", "id": "14.281", "label": "Prerequisite: 14.281", "shape": "dot", "title": "Prerequisite: 14.281"}, {"color": "#97c2fc", "id": "6.3700", "label": "Prerequisite: 6.3700", "shape": "dot", "title": "Prerequisite: 6.3700"}, {"color": "#97c2fc", "id": "18.650", "label": "Prerequisite: 18.650", "shape": "dot", "title": "Prerequisite: 18.650"}, {"color": "#97c2fc", "id": "18.06", "label": "Prerequisite: 18.06", "shape": "dot", "title": "Prerequisite: 18.06"}, {"color": "#97c2fc", "id": "15.0111", "label": "Prerequisite: 15.0111", "shape": "dot", "title": "Prerequisite: 15.0111"}, {"color": "#97c2fc", "id": "15.010", "label": "Prerequisite: 15.010", "shape": "dot", "title": "Prerequisite: 15.010"}, {"color": "#97c2fc", "id": "15.011", "label": "Prerequisite: 15.011", "shape": "dot", "title": "Prerequisite: 15.011"}, {"color": "#97c2fc", "id": "15.024", "label": "Prerequisite: 15.024", "shape": "dot", "title": "Prerequisite: 15.024"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Permission of instructor", "to": "14.00"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.000"}, {"arrows": "to", "from": "Permission of department", "to": "14.001"}, {"arrows": "to", "from": "14.01", "to": "14.003"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.003"}, {"arrows": "to", "from": "14.01", "to": "14.03"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.03"}, {"arrows": "to", "from": "Calculus II (GIR)", "to": "14.04"}, {"arrows": "to", "from": "14.01", "to": "14.04"}, {"arrows": "to", "from": "14.01", "to": "14.05"}, {"arrows": "to", "from": "14.02", "to": "14.05"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.05"}, {"arrows": "to", "from": "14.01", "to": "14.06"}, {"arrows": "to", "from": "14.02", "to": "14.06"}, {"arrows": "to", "from": "14.01", "to": "14.08"}, {"arrows": "to", "from": "14.04", "to": "14.09"}, {"arrows": "to", "from": "14.06", "to": "14.09"}, {"arrows": "to", "from": "14.04", "to": "14.10"}, {"arrows": "to", "from": "14.06", "to": "14.10"}, {"arrows": "to", "from": "14.01", "to": "14.11"}, {"arrows": "to", "from": "14.01", "to": "14.12"}, {"arrows": "to", "from": "6.041B", "to": "14.12"}, {"arrows": "to", "from": "14.04", "to": "14.12"}, {"arrows": "to", "from": "14.30", "to": "14.12"}, {"arrows": "to", "from": "18.05", "to": "14.12"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.12"}, {"arrows": "to", "from": "14.04", "to": "14.121"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.121"}, {"arrows": "to", "from": "14.121", "to": "14.122"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.122"}, {"arrows": "to", "from": "14.121", "to": "14.123"}, {"arrows": "to", "from": "14.122", "to": "14.123"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.123"}, {"arrows": "to", "from": "14.123", "to": "14.124"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.124"}, {"arrows": "to", "from": "14.124", "to": "14.125"}, {"arrows": "to", "from": "14.122", "to": "14.126"}, {"arrows": "to", "from": "14.121", "to": "14.129"}, {"arrows": "to", "from": "14.281", "to": "14.129"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.129"}, {"arrows": "to", "from": "14.01", "to": "14.13"}, {"arrows": "to", "from": "14.121", "to": "14.130"}, {"arrows": "to", "from": "14.451", "to": "14.130"}, {"arrows": "to", "from": "14.126", "to": "14.147"}, {"arrows": "to", "from": "6.3700", "to": "14.15"}, {"arrows": "to", "from": "14.30", "to": "14.15"}, {"arrows": "to", "from": "14.01", "to": "14.16"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.16"}, {"arrows": "to", "from": "14.122", "to": "14.160"}, {"arrows": "to", "from": "14.122", "to": "14.163"}, {"arrows": "to", "from": "14.381", "to": "14.163"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.163"}, {"arrows": "to", "from": "14.04", "to": "14.18"}, {"arrows": "to", "from": "14.12", "to": "14.18"}, {"arrows": "to", "from": "14.15", "to": "14.18"}, {"arrows": "to", "from": "14.19", "to": "14.18"}, {"arrows": "to", "from": "14.01", "to": "14.19"}, {"arrows": "to", "from": "14.01", "to": "14.20"}, {"arrows": "to", "from": "14.01", "to": "14.200"}, {"arrows": "to", "from": "14.01", "to": "14.27"}, {"arrows": "to", "from": "6.3700", "to": "14.27"}, {"arrows": "to", "from": "14.30", "to": "14.27"}, {"arrows": "to", "from": "14.01", "to": "14.270"}, {"arrows": "to", "from": "6.3700", "to": "14.270"}, {"arrows": "to", "from": "14.30", "to": "14.270"}, {"arrows": "to", "from": "14.271", "to": "14.272"}, {"arrows": "to", "from": "14.271", "to": "14.273"}, {"arrows": "to", "from": "14.01", "to": "14.26"}, {"arrows": "to", "from": "14.124", "to": "14.282"}, {"arrows": "to", "from": "14.282", "to": "14.283"}, {"arrows": "to", "from": "14.282", "to": "14.284"}, {"arrows": "to", "from": "Calculus II (GIR)", "to": "14.30"}, {"arrows": "to", "from": "Calculus II (GIR)", "to": "14.300"}, {"arrows": "to", "from": "14.30", "to": "14.32"}, {"arrows": "to", "from": "18.650", "to": "14.32"}, {"arrows": "to", "from": "14.300", "to": "14.320"}, {"arrows": "to", "from": "18.650", "to": "14.320"}, {"arrows": "to", "from": "14.32", "to": "14.33"}, {"arrows": "to", "from": "14.01", "to": "14.33"}, {"arrows": "to", "from": "14.02", "to": "14.33"}, {"arrows": "to", "from": "14.04", "to": "14.35"}, {"arrows": "to", "from": "14.12", "to": "14.35"}, {"arrows": "to", "from": "14.15", "to": "14.35"}, {"arrows": "to", "from": "14.19", "to": "14.35"}, {"arrows": "to", "from": "14.32", "to": "14.36"}, {"arrows": "to", "from": "14.32", "to": "14.38"}, {"arrows": "to", "from": "14.32", "to": "14.380"}, {"arrows": "to", "from": "14.380", "to": "14.381"}, {"arrows": "to", "from": "18.06", "to": "14.381"}, {"arrows": "to", "from": "14.381", "to": "14.382"}, {"arrows": "to", "from": "14.382", "to": "14.383"}, {"arrows": "to", "from": "14.382", "to": "14.384"}, {"arrows": "to", "from": "14.382", "to": "14.385"}, {"arrows": "to", "from": "14.382", "to": "14.386"}, {"arrows": "to", "from": "14.381", "to": "14.387"}, {"arrows": "to", "from": "14.381", "to": "14.388"}, {"arrows": "to", "from": "14.32", "to": "14.39"}, {"arrows": "to", "from": "14.320", "to": "14.390"}, {"arrows": "to", "from": "14.124", "to": "14.391"}, {"arrows": "to", "from": "14.454", "to": "14.391"}, {"arrows": "to", "from": "14.124", "to": "14.392"}, {"arrows": "to", "from": "14.454", "to": "14.392"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.399"}, {"arrows": "to", "from": "14.01", "to": "14.41"}, {"arrows": "to", "from": "14.01", "to": "14.410"}, {"arrows": "to", "from": "14.01", "to": "14.42"}, {"arrows": "to", "from": "14.01", "to": "14.420"}, {"arrows": "to", "from": "14.01", "to": "14.43"}, {"arrows": "to", "from": "15.0111", "to": "14.43"}, {"arrows": "to", "from": "14.01", "to": "14.44"}, {"arrows": "to", "from": "15.0111", "to": "14.44"}, {"arrows": "to", "from": "14.01", "to": "14.444"}, {"arrows": "to", "from": "15.0111", "to": "14.444"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.449"}, {"arrows": "to", "from": "14.01", "to": "14.45"}, {"arrows": "to", "from": "15.0111", "to": "14.45"}, {"arrows": "to", "from": "14.01", "to": "14.450"}, {"arrows": "to", "from": "15.010", "to": "14.450"}, {"arrows": "to", "from": "15.011", "to": "14.450"}, {"arrows": "to", "from": "15.024", "to": "14.450"}, {"arrows": "to", "from": "14.06", "to": "14.451"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.451"}, {"arrows": "to", "from": "14.451", "to": "14.452"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.452"}, {"arrows": "to", "from": "14.452", "to": "14.453"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.453"}, {"arrows": "to", "from": "14.453", "to": "14.454"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.454"}, {"arrows": "to", "from": "14.122", "to": "14.461"}, {"arrows": "to", "from": "14.452", "to": "14.461"}, {"arrows": "to", "from": "14.461", "to": "14.462"}, {"arrows": "to", "from": "14.04", "to": "14.471"}, {"arrows": "to", "from": "14.471", "to": "14.472"}, {"arrows": "to", "from": "14.01", "to": "14.54"}, {"arrows": "to", "from": "14.01", "to": "14.540"}, {"arrows": "to", "from": "14.04", "to": "14.581"}, {"arrows": "to", "from": "14.06", "to": "14.582"}, {"arrows": "to", "from": "14.30", "to": "14.64"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.64"}, {"arrows": "to", "from": "14.300", "to": "14.640"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.640"}, {"arrows": "to", "from": "14.32", "to": "14.661"}, {"arrows": "to", "from": "14.03", "to": "14.661"}, {"arrows": "to", "from": "14.04", "to": "14.661"}, {"arrows": "to", "from": "14.32", "to": "14.661A"}, {"arrows": "to", "from": "14.03", "to": "14.661A"}, {"arrows": "to", "from": "14.04", "to": "14.661A"}, {"arrows": "to", "from": "14.32", "to": "14.662"}, {"arrows": "to", "from": "14.03", "to": "14.662"}, {"arrows": "to", "from": "14.04", "to": "14.662"}, {"arrows": "to", "from": "14.32", "to": "14.662A"}, {"arrows": "to", "from": "14.03", "to": "14.662A"}, {"arrows": "to", "from": "14.04", "to": "14.662A"}, {"arrows": "to", "from": "14.01", "to": "14.74"}, {"arrows": "to", "from": "14.01", "to": "14.740"}, {"arrows": "to", "from": "14.01", "to": "14.75"}, {"arrows": "to", "from": "14.01", "to": "14.750"}, {"arrows": "to", "from": "14.01", "to": "14.76"}, {"arrows": "to", "from": "14.30", "to": "14.76"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.76"}, {"arrows": "to", "from": "14.01", "to": "14.760"}, {"arrows": "to", "from": "14.30", "to": "14.760"}, {"arrows": "to", "from": "Permission of instructor", "to": "14.760"}, {"arrows": "to", "from": "14.121", "to": "14.771"}, {"arrows": "to", "from": "14.122", "to": "14.771"}, {"arrows": "to", "from": "14.121", "to": "14.772"}, {"arrows": "to", "from": "14.451", "to": "14.772"}, {"arrows": "to", "from": "14.121", "to": "14.773"}, {"arrows": "to", "from": "14.451", "to": "14.773"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "repulsion": {
+            "centralGravity": 0.2,
+            "damping": 0.09,
+            "nodeDistance": 200,
+            "springConstant": 0.05,
+            "springLength": 200
+        },
+        "solver": "repulsion",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

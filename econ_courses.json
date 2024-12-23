@@ -1,30 +1,23 @@
 {
     "14.00": {
         "title": "Undergraduate Internship in Economics",
-        "prerequisites": [
-            "Permission of instructor"
-        ],
+        "prerequisites": [],
         "units": "Arranged"
     },
     "14.000": {
         "title": "Graduate Internship in Economics",
-        "prerequisites": [
-            "Permission of instructor"
-        ],
+        "prerequisites": [],
         "units": "Arranged"
     },
     "14.001": {
         "title": "Design of Policy Summer Internship",
-        "prerequisites": [
-            "Permission of department"
-        ],
+        "prerequisites": [],
         "units": "0-1-0"
     },
     "14.003": {
         "title": "Microeconomic Theory and Public Policy",
         "prerequisites": [
-            "14.01",
-            "Permission of instructor"
+            "14.01"
         ],
         "units": "4-0-8"
     },
@@ -46,8 +39,7 @@
     "14.03": {
         "title": "Microeconomic Theory and Public Policy",
         "prerequisites": [
-            "14.01",
-            "Permission of instructor"
+            "14.01"
         ],
         "units": "4-0-8"
     },
@@ -63,8 +55,7 @@
         "title": "Intermediate Macroeconomics",
         "prerequisites": [
             "14.01",
-            "14.02",
-            "Permission of instructor"
+            "14.02"
         ],
         "units": "4-0-8"
     },
@@ -113,24 +104,21 @@
             "6.041B",
             "14.04",
             "14.30",
-            "18.05",
-            "Permission of instructor"
+            "18.05"
         ],
         "units": "4-0-8"
     },
     "14.121": {
         "title": "Microeconomic Theory I",
         "prerequisites": [
-            "14.04",
-            "Permission of instructor"
+            "14.04"
         ],
         "units": "3-0-3"
     },
     "14.122": {
         "title": "Microeconomic Theory II",
         "prerequisites": [
-            "14.121",
-            "Permission of instructor"
+            "14.121"
         ],
         "units": "3-0-3"
     },
@@ -138,16 +126,14 @@
         "title": "Microeconomic Theory III",
         "prerequisites": [
             "14.121",
-            "14.122",
-            "Permission of instructor"
+            "14.122"
         ],
         "units": "3-0-3"
     },
     "14.124": {
         "title": "Microeconomic Theory IV",
         "prerequisites": [
-            "14.123",
-            "Permission of instructor"
+            "14.123"
         ],
         "units": "3-0-3"
     },
@@ -174,8 +160,7 @@
         "title": "Advanced Contract Theory",
         "prerequisites": [
             "14.121",
-            "14.281",
-            "Permission of instructor"
+            "14.281"
         ],
         "units": "3-0-3"
     },
@@ -217,8 +202,7 @@
     "14.16": {
         "title": "Strategy and Information",
         "prerequisites": [
-            "14.01",
-            "Permission of instructor"
+            "14.01"
         ],
         "units": "4-0-8"
     },
@@ -233,8 +217,7 @@
         "title": "Algorithms and Behavioral Science",
         "prerequisites": [
             "14.122",
-            "14.381",
-            "Permission of instructor"
+            "14.381"
         ],
         "units": "4-0-8"
     },
@@ -507,9 +490,7 @@
     },
     "14.399": {
         "title": "Seminar in Data Economics and Development Policy",
-        "prerequisites": [
-            "Permission of instructor"
-        ],
+        "prerequisites": [],
         "units": "2-0-10"
     },
     "14.41": {
@@ -591,9 +572,7 @@
     },
     "14.449": {
         "title": "Current Research in Financial Economics",
-        "prerequisites": [
-            "Permission of instructor"
-        ],
+        "prerequisites": [],
         "units": "3-0-3"
     },
     "14.45": {
@@ -617,32 +596,28 @@
     "14.451": {
         "title": "Dynamic Optimization Methods with Applications",
         "prerequisites": [
-            "14.06",
-            "Permission of instructor"
+            "14.06"
         ],
         "units": "3-0-3"
     },
     "14.452": {
         "title": "Economic Growth",
         "prerequisites": [
-            "14.451",
-            "Permission of instructor"
+            "14.451"
         ],
         "units": "3-0-3"
     },
     "14.453": {
         "title": "Economic Fluctuations",
         "prerequisites": [
-            "14.452",
-            "Permission of instructor"
+            "14.452"
         ],
         "units": "3-0-3"
     },
     "14.454": {
         "title": "Economic Crises",
         "prerequisites": [
-            "14.453",
-            "Permission of instructor"
+            "14.453"
         ],
         "units": "3-0-3"
     },
@@ -716,16 +691,14 @@
     "14.64": {
         "title": "Labor Economics and Public Policy",
         "prerequisites": [
-            "14.30",
-            "Permission of instructor"
+            "14.30"
         ],
         "units": "4-0-8"
     },
     "14.640": {
         "title": "Labor Economics and Public Policy",
         "prerequisites": [
-            "14.300",
-            "Permission of instructor"
+            "14.300"
         ],
         "units": "4-0-8"
     },
@@ -807,8 +780,7 @@
         "title": "Firms, Markets, Trade and Growth",
         "prerequisites": [
             "14.01",
-            "14.30",
-            "Permission of instructor"
+            "14.30"
         ],
         "units": "4-0-8"
     },
@@ -816,8 +788,7 @@
         "title": "Firms, Markets, Trade and Growth",
         "prerequisites": [
             "14.01",
-            "14.30",
-            "Permission of instructor"
+            "14.30"
         ],
         "units": "4-0-8"
     },
