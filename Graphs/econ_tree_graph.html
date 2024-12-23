@@ -178,43 +178,7 @@
                   // adding nodes and edges to the graph
                   data = {nodes: nodes, edges: edges};
 
-                  var options = {
-    "configure": {
-        "enabled": false
-    },
-    "edges": {
-        "color": {
-            "inherit": true
-        },
-        "smooth": {
-            "enabled": true,
-            "type": "dynamic"
-        }
-    },
-    "interaction": {
-        "dragNodes": true,
-        "hideEdgesOnDrag": false,
-        "hideNodesOnDrag": false
-    },
-    "physics": {
-        "enabled": true,
-        "repulsion": {
-            "centralGravity": 0.2,
-            "damping": 0.09,
-            "nodeDistance": 200,
-            "springConstant": 0.05,
-            "springLength": 200
-        },
-        "solver": "repulsion",
-        "stabilization": {
-            "enabled": true,
-            "fit": true,
-            "iterations": 1000,
-            "onlyDynamicEdges": false,
-            "updateInterval": 50
-        }
-    }
-};
+                  var options = {"layout": {"hierarchical": {"enabled": true, "direction": "UD", "sortMethod": "directed", "nodeSpacing": 200, "levelSeparation": 300, "treeSpacing": 250, "blockShifting": true, "edgeMinimization": true, "parentCentralization": true}}, "physics": {"enabled": true, "hierarchicalRepulsion": {"nodeDistance": 400, "centralGravity": 0.02, "springConstant": 0.001, "damping": 0.2}, "stabilization": {"enabled": true, "iterations": 2000, "updateInterval": 50}, "minVelocity": 0.01, "solver": "hierarchicalRepulsion"}, "edges": {"smooth": {"type": "cubicBezier", "forceDirection": "vertical"}}};
 
                   
 
