@@ -1,0 +1,863 @@
+{
+    "14.00": {
+        "title": "Undergraduate Internship in Economics",
+        "prerequisites": [
+            "Permission of instructor"
+        ],
+        "units": "Arranged"
+    },
+    "14.000": {
+        "title": "Graduate Internship in Economics",
+        "prerequisites": [
+            "Permission of instructor"
+        ],
+        "units": "Arranged"
+    },
+    "14.001": {
+        "title": "Design of Policy Summer Internship",
+        "prerequisites": [
+            "Permission of department"
+        ],
+        "units": "0-1-0"
+    },
+    "14.003": {
+        "title": "Microeconomic Theory and Public Policy",
+        "prerequisites": [
+            "14.01",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.009": {
+        "title": "Economics and Society's Toughest Problems",
+        "prerequisites": [],
+        "units": "1-0-2"
+    },
+    "14.01": {
+        "title": "Principles of Microeconomics",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "14.02": {
+        "title": "Principles of Macroeconomics",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "14.03": {
+        "title": "Microeconomic Theory and Public Policy",
+        "prerequisites": [
+            "14.01",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.04": {
+        "title": "Intermediate Microeconomic Theory",
+        "prerequisites": [
+            "Calculus II (GIR)",
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.05": {
+        "title": "Intermediate Macroeconomics",
+        "prerequisites": [
+            "14.01",
+            "14.02",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.06": {
+        "title": "Advanced Macroeconomics",
+        "prerequisites": [
+            "14.01",
+            "14.02"
+        ],
+        "units": "4-0-8"
+    },
+    "14.08": {
+        "title": "Technical Topics in Economics",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.09": {
+        "title": "Reading Seminar in Economics",
+        "prerequisites": [
+            "14.04",
+            "14.06"
+        ],
+        "units": "Arranged"
+    },
+    "14.10": {
+        "title": "Reading Seminar in Economics",
+        "prerequisites": [
+            "14.04",
+            "14.06"
+        ],
+        "units": "Arranged"
+    },
+    "14.11": {
+        "title": "Topics in Economics",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.12": {
+        "title": "Economic Applications of Game Theory",
+        "prerequisites": [
+            "14.01",
+            "6.041B",
+            "14.04",
+            "14.30",
+            "18.05",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.121": {
+        "title": "Microeconomic Theory I",
+        "prerequisites": [
+            "14.04",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.122": {
+        "title": "Microeconomic Theory II",
+        "prerequisites": [
+            "14.121",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.123": {
+        "title": "Microeconomic Theory III",
+        "prerequisites": [
+            "14.121",
+            "14.122",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.124": {
+        "title": "Microeconomic Theory IV",
+        "prerequisites": [
+            "14.123",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.125": {
+        "title": "Market Design",
+        "prerequisites": [
+            "14.124"
+        ],
+        "units": "4-0-8"
+    },
+    "14.126": {
+        "title": "Game Theory",
+        "prerequisites": [
+            "14.122"
+        ],
+        "units": "3-0-9"
+    },
+    "14.127": {
+        "title": "Advanced Game Theory",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.129": {
+        "title": "Advanced Contract Theory",
+        "prerequisites": [
+            "14.121",
+            "14.281",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.13": {
+        "title": "Psychology and Economics",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.130": {
+        "title": "Reading Economic Theory",
+        "prerequisites": [
+            "14.121",
+            "14.451"
+        ],
+        "units": "2-0-10"
+    },
+    "14.137": {
+        "title": "Psychology and Economics",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.147": {
+        "title": "Topics in Game Theory",
+        "prerequisites": [
+            "14.126"
+        ],
+        "units": "4-0-8"
+    },
+    "14.15": {
+        "title": "Networks",
+        "prerequisites": [
+            "6.3700",
+            "14.30"
+        ],
+        "units": "4-0-8"
+    },
+    "14.16": {
+        "title": "Strategy and Information",
+        "prerequisites": [
+            "14.01",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.160": {
+        "title": "Behavioral Economics",
+        "prerequisites": [
+            "14.122"
+        ],
+        "units": "4-0-8"
+    },
+    "14.163": {
+        "title": "Algorithms and Behavioral Science",
+        "prerequisites": [
+            "14.122",
+            "14.381",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.18": {
+        "title": "Mathematical Economic Modeling",
+        "prerequisites": [
+            "14.04",
+            "14.12",
+            "14.15",
+            "14.19"
+        ],
+        "units": "4-0-8"
+    },
+    "14.19": {
+        "title": "Market Design",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.20": {
+        "title": "Industrial Organization: Competitive Strategy and Public Policy",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.200": {
+        "title": "Industrial Organization: Competitive Strategy and Public Policy",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.27": {
+        "title": "Economics of Digitization",
+        "prerequisites": [
+            "14.01",
+            "6.3700",
+            "14.30"
+        ],
+        "units": "4-0-8"
+    },
+    "14.270": {
+        "title": "Economics of Digitization",
+        "prerequisites": [
+            "14.01",
+            "6.3700",
+            "14.30"
+        ],
+        "units": "4-0-8"
+    },
+    "14.271": {
+        "title": "Industrial Organization I",
+        "prerequisites": [],
+        "corequisites": [
+            "14.122",
+            "14.381"
+        ],
+        "units": "5-0-7"
+    },
+    "14.272": {
+        "title": "Industrial Organization II",
+        "prerequisites": [
+            "14.271"
+        ],
+        "units": "5-0-7"
+    },
+    "14.273": {
+        "title": "Advanced Topics in Industrial Organization",
+        "prerequisites": [
+            "14.271"
+        ],
+        "units": "5-0-7"
+    },
+    "14.26": {
+        "title": "Organizational Economics",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.260": {
+        "title": "Organizational Economics",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.282": {
+        "title": "Introduction to Organizational Economics",
+        "prerequisites": [
+            "14.124"
+        ],
+        "units": "5-0-7"
+    },
+    "14.283": {
+        "title": "Advanced Topics in Organizational Economics I",
+        "prerequisites": [
+            "14.282"
+        ],
+        "units": "2-0-4"
+    },
+    "14.284": {
+        "title": "Advanced Topics in Organizational Economics II",
+        "prerequisites": [
+            "14.282"
+        ],
+        "units": "2-0-4"
+    },
+    "14.30": {
+        "title": "Introduction to Statistical Methods in Economics",
+        "prerequisites": [
+            "Calculus II (GIR)"
+        ],
+        "units": "4-0-8"
+    },
+    "14.300": {
+        "title": "Introduction to Statistical Methods in Economics",
+        "prerequisites": [
+            "Calculus II (GIR)"
+        ],
+        "units": "4-0-8"
+    },
+    "14.310": {
+        "title": "Data Analysis for Social Scientists",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.32": {
+        "title": "Econometric Data Science",
+        "prerequisites": [
+            "14.30",
+            "18.650"
+        ],
+        "units": "4-4-4"
+    },
+    "14.320": {
+        "title": "Econometric Data Science",
+        "prerequisites": [
+            "14.300",
+            "18.650"
+        ],
+        "units": "4-4-4"
+    },
+    "14.33": {
+        "title": "Research and Communication in Economics: Topics, Methods, and Implementation",
+        "prerequisites": [
+            "14.32",
+            "14.01",
+            "14.02"
+        ],
+        "units": "3-4-5"
+    },
+    "14.35": {
+        "title": "Why Markets Fail",
+        "prerequisites": [
+            "14.04",
+            "14.12",
+            "14.15",
+            "14.19"
+        ],
+        "units": "4-0-8"
+    },
+    "14.36": {
+        "title": "Advanced Econometrics",
+        "prerequisites": [
+            "14.32"
+        ],
+        "units": "4-0-8"
+    },
+    "14.38": {
+        "title": "Inference on Causal and Structural Parameters Using ML and AI",
+        "prerequisites": [
+            "14.32"
+        ],
+        "units": "4-0-8"
+    },
+    "14.380": {
+        "title": "Statistical Method in Economics",
+        "prerequisites": [
+            "14.32"
+        ],
+        "units": "3-0-3"
+    },
+    "14.381": {
+        "title": "Estimation and Inference for Linear Causal and Structural Models",
+        "prerequisites": [
+            "14.380",
+            "18.06"
+        ],
+        "units": "3-0-3"
+    },
+    "14.382": {
+        "title": "Econometrics",
+        "prerequisites": [
+            "14.381"
+        ],
+        "units": "3-0-3"
+    },
+    "14.383": {
+        "title": "High-Dimensional Econometrics",
+        "prerequisites": [
+            "14.382"
+        ],
+        "units": "3-0-3"
+    },
+    "14.384": {
+        "title": "Time Series Analysis",
+        "prerequisites": [
+            "14.382"
+        ],
+        "units": "5-0-7"
+    },
+    "14.385": {
+        "title": "Nonlinear Econometric Analysis",
+        "prerequisites": [
+            "14.382"
+        ],
+        "units": "5-0-7"
+    },
+    "14.386": {
+        "title": "New Econometric Methods",
+        "prerequisites": [
+            "14.382"
+        ],
+        "units": "4-0-8"
+    },
+    "14.387": {
+        "title": "Applied Econometrics",
+        "prerequisites": [
+            "14.381"
+        ],
+        "units": "4-0-8"
+    },
+    "14.388": {
+        "title": "Inference on Causal and Structural Parameters Using ML and AI",
+        "prerequisites": [
+            "14.381"
+        ],
+        "units": "4-0-8"
+    },
+    "14.39": {
+        "title": "Large-Scale Decision-Making and Inference",
+        "prerequisites": [
+            "14.32"
+        ],
+        "units": "4-0-8"
+    },
+    "14.390": {
+        "title": "Large-Scale Decision-Making and Inference",
+        "prerequisites": [
+            "14.320"
+        ],
+        "units": "4-0-8"
+    },
+    "14.391": {
+        "title": "Workshop in Economic Research",
+        "prerequisites": [
+            "14.124",
+            "14.454"
+        ],
+        "units": "2-0-10"
+    },
+    "14.392": {
+        "title": "Workshop in Economic Research",
+        "prerequisites": [
+            "14.124",
+            "14.454"
+        ],
+        "units": "2-0-10"
+    },
+    "14.399": {
+        "title": "Seminar in Data Economics and Development Policy",
+        "prerequisites": [
+            "Permission of instructor"
+        ],
+        "units": "2-0-10"
+    },
+    "14.41": {
+        "title": "Public Finance and Public Policy",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.410": {
+        "title": "Public Finance and Public Policy",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.416": {
+        "title": "Asset Pricing",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.42": {
+        "title": "Environmental Policy and Economics",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.420": {
+        "title": "Environmental Policy and Economics",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.43": {
+        "title": "Economics of Energy, Innovation, and Sustainability",
+        "prerequisites": [
+            "14.01",
+            "15.0111"
+        ],
+        "units": "3-0-9"
+    },
+    "14.44": {
+        "title": "Energy Economics and Policy",
+        "prerequisites": [
+            "14.01",
+            "15.0111"
+        ],
+        "units": "4-0-8"
+    },
+    "14.440": {
+        "title": "Advanced Corporate Finance",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "14.441": {
+        "title": "Corporate Finance",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "14.442": {
+        "title": "Advanced Asset Pricing",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "14.444": {
+        "title": "Energy Economics and Policy",
+        "prerequisites": [
+            "14.01",
+            "15.0111"
+        ],
+        "units": "4-0-8"
+    },
+    "14.448": {
+        "title": "Current Topics in Finance",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "14.449": {
+        "title": "Current Research in Financial Economics",
+        "prerequisites": [
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.45": {
+        "title": "Climate and Energy in the Global Economy",
+        "prerequisites": [
+            "14.01",
+            "15.0111"
+        ],
+        "units": "3-0-9"
+    },
+    "14.450": {
+        "title": "Climate and Energy in the Global Economy",
+        "prerequisites": [
+            "14.01",
+            "15.010",
+            "15.011",
+            "15.024"
+        ],
+        "units": "3-0-9"
+    },
+    "14.451": {
+        "title": "Dynamic Optimization Methods with Applications",
+        "prerequisites": [
+            "14.06",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.452": {
+        "title": "Economic Growth",
+        "prerequisites": [
+            "14.451",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.453": {
+        "title": "Economic Fluctuations",
+        "prerequisites": [
+            "14.452",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.454": {
+        "title": "Economic Crises",
+        "prerequisites": [
+            "14.453",
+            "Permission of instructor"
+        ],
+        "units": "3-0-3"
+    },
+    "14.461": {
+        "title": "Advanced Macroeconomics I",
+        "prerequisites": [
+            "14.122",
+            "14.452"
+        ],
+        "units": "5-0-7"
+    },
+    "14.462": {
+        "title": "Advanced Macroeconomics II",
+        "prerequisites": [
+            "14.461"
+        ],
+        "units": "5-0-7"
+    },
+    "14.47": {
+        "title": "Global Energy: Politics, Markets, and Policy",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "14.471": {
+        "title": "Public Economics I",
+        "prerequisites": [
+            "14.04"
+        ],
+        "units": "4-0-8"
+    },
+    "14.472": {
+        "title": "Public Economics II",
+        "prerequisites": [
+            "14.471"
+        ],
+        "units": "3-0-9"
+    },
+    "14.475": {
+        "title": "Environmental Economics",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.54": {
+        "title": "International Trade",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.540": {
+        "title": "International Trade",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.581": {
+        "title": "International Economics I",
+        "prerequisites": [
+            "14.04"
+        ],
+        "units": "5-0-7"
+    },
+    "14.582": {
+        "title": "International Economics II",
+        "prerequisites": [
+            "14.06"
+        ],
+        "units": "5-0-7"
+    },
+    "14.64": {
+        "title": "Labor Economics and Public Policy",
+        "prerequisites": [
+            "14.30",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.640": {
+        "title": "Labor Economics and Public Policy",
+        "prerequisites": [
+            "14.300",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.661": {
+        "title": "Labor Economics I",
+        "prerequisites": [
+            "14.32",
+            "14.03",
+            "14.04"
+        ],
+        "units": "5-0-7"
+    },
+    "14.661A": {
+        "title": "Labor Economics I",
+        "prerequisites": [
+            "14.32",
+            "14.03",
+            "14.04"
+        ],
+        "units": "5-0-7"
+    },
+    "14.662": {
+        "title": "Labor Economics II",
+        "prerequisites": [
+            "14.32",
+            "14.03",
+            "14.04"
+        ],
+        "units": "5-0-7"
+    },
+    "14.662A": {
+        "title": "Labor Economics II",
+        "prerequisites": [
+            "14.32",
+            "14.03",
+            "14.04"
+        ],
+        "units": "5-0-7"
+    },
+    "14.70": {
+        "title": "Medieval Economic History in Comparative Perspective",
+        "prerequisites": [],
+        "units": "3-0-9"
+    },
+    "14.73": {
+        "title": "The Challenge of World Poverty",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.74": {
+        "title": "Foundations of Development Policy",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.740": {
+        "title": "Foundations of Development Policy",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.75": {
+        "title": "Political Economy and Economic Development",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.750": {
+        "title": "Political Economy and Economic Development",
+        "prerequisites": [
+            "14.01"
+        ],
+        "units": "4-0-8"
+    },
+    "14.76": {
+        "title": "Firms, Markets, Trade and Growth",
+        "prerequisites": [
+            "14.01",
+            "14.30",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.760": {
+        "title": "Firms, Markets, Trade and Growth",
+        "prerequisites": [
+            "14.01",
+            "14.30",
+            "Permission of instructor"
+        ],
+        "units": "4-0-8"
+    },
+    "14.770": {
+        "title": "Introduction to Collective Choice and Political Economy",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.771": {
+        "title": "Development Economics: Microeconomic Issues",
+        "prerequisites": [
+            "14.121",
+            "14.122"
+        ],
+        "units": "5-0-7"
+    },
+    "14.772": {
+        "title": "Development Economics: Macroeconomics",
+        "prerequisites": [
+            "14.121",
+            "14.451"
+        ],
+        "units": "5-0-7"
+    },
+    "14.773": {
+        "title": "Political Economy: Institutions and Development",
+        "prerequisites": [
+            "14.121",
+            "14.451"
+        ],
+        "units": "5-0-7"
+    },
+    "14.775": {
+        "title": "Comparing Societies",
+        "prerequisites": [],
+        "units": "4-0-8"
+    },
+    "14.78": {
+        "title": "Shaping the Future of Technology: From Early Agriculture to Artificial Intelligence",
+        "prerequisites": [],
+        "units": "4-0-8"
+    }
+}

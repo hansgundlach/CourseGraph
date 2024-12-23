@@ -1,0 +1,844 @@
+{
+    "6.100A": {
+        "title": "Introduction to Computer Science Programming in Python",
+        "prerequisites": []
+    },
+    "6.100B": {
+        "title": "Introduction to Computational Thinking and Data Science",
+        "prerequisites": [
+            "6.100A"
+        ]
+    },
+    "6.100L": {
+        "title": "Introduction to Computer Science and Programming",
+        "prerequisites": []
+    },
+    "6.1010": {
+        "title": "Fundamentals of Programming",
+        "prerequisites": [
+            "6.100A"
+        ]
+    },
+    "6.1020": {
+        "title": "Software Construction",
+        "prerequisites": [
+            "6.1010"
+        ]
+    },
+    "6.1040": {
+        "title": "Software Design",
+        "prerequisites": [
+            "6.1020",
+            "6.1200"
+        ]
+    },
+    "6.1060": {
+        "title": "Software Performance Engineering",
+        "prerequisites": [
+            "6.1020",
+            "6.1210",
+            "6.1910"
+        ]
+    },
+    "6.5060": {
+        "title": "Algorithm Engineering",
+        "prerequisites": [
+            "6.1060",
+            "6.1220"
+        ]
+    },
+    "6.5080": {
+        "title": "Multicore Programming",
+        "prerequisites": [
+            "6.1210"
+        ]
+    },
+    "6.5081": {
+        "title": "Multicore Programming",
+        "prerequisites": [
+            "6.1210"
+        ]
+    },
+    "6.1100": {
+        "title": "Computer Language Engineering",
+        "prerequisites": [
+            "6.1020",
+            "6.1910"
+        ]
+    },
+    "6.1120": {
+        "title": "Dynamic Computer Language Engineering",
+        "prerequisites": [
+            "6.1020",
+            "6.1910"
+        ]
+    },
+    "6.5110": {
+        "title": "Foundations of Program Analysis",
+        "prerequisites": [
+            "6.1100"
+        ]
+    },
+    "6.5120": {
+        "title": "Formal Reasoning About Programs",
+        "prerequisites": [
+            "6.1020",
+            "6.1200"
+        ]
+    },
+    "6.5150": {
+        "title": "Large-scale Symbolic Systems",
+        "prerequisites": [
+            "6.4100"
+        ]
+    },
+    "6.5151": {
+        "title": "Large-scale Symbolic Systems",
+        "prerequisites": [
+            "6.4100"
+        ]
+    },
+    "6.5160": {
+        "title": "Classical Mechanics: A Computational Approach",
+        "prerequisites": []
+    },
+    "6.1200": {
+        "title": "Mathematics for Computer Science",
+        "prerequisites": []
+    },
+    "6.120A": {
+        "title": "Discrete Mathematics and Proof for Computer Science",
+        "prerequisites": []
+    },
+    "6.1210": {
+        "title": "Introduction to Algorithms",
+        "prerequisites": [
+            "6.100A",
+            "6.1200"
+        ]
+    },
+    "6.1220": {
+        "title": "Design and Analysis of Algorithms",
+        "prerequisites": [
+            "6.1200",
+            "6.1210"
+        ]
+    },
+    "6.1400": {
+        "title": "Computability and Complexity Theory",
+        "prerequisites": [
+            "6.1200",
+            "6.1210"
+        ]
+    },
+    "6.1420": {
+        "title": "Fixed Parameter and Fine-grained Computation",
+        "prerequisites": [
+            "6.1200",
+            "6.1210",
+            "6.1220"
+        ]
+    },
+    "6.5210": {
+        "title": "Advanced Algorithms",
+        "prerequisites": [
+            "6.1220",
+            "6.1200"
+        ]
+    },
+    "6.5220": {
+        "title": "Randomized Algorithms",
+        "prerequisites": [
+            "6.1200",
+            "6.3700",
+            "6.1220",
+            "6.5210"
+        ]
+    },
+    "6.5230": {
+        "title": "Advanced Data Structures",
+        "prerequisites": [
+            "6.1220"
+        ]
+    },
+    "6.5240": {
+        "title": "Sublinear Time Algorithms",
+        "prerequisites": [
+            "6.1220"
+        ]
+    },
+    "6.5250": {
+        "title": "Distributed Algorithms",
+        "prerequisites": [
+            "6.1220"
+        ]
+    },
+    "6.5310": {
+        "title": "Geometric Folding Algorithms: Linkages, Origami, Polyhedra",
+        "prerequisites": [
+            "6.1220"
+        ]
+    },
+    "6.5320": {
+        "title": "Geometric Computing",
+        "prerequisites": [
+            "6.1220"
+        ]
+    },
+    "6.5340": {
+        "title": "Topics in Algorithmic Game Theory",
+        "prerequisites": [
+            "6.1210",
+            "6.1220"
+        ]
+    },
+    "6.5350": {
+        "title": "Matrix Multiplication and Graph Algorithms",
+        "prerequisites": [
+            "6.1220"
+        ]
+    },
+    "6.5400[J]": {
+        "title": "Theory of Computation",
+        "prerequisites": [
+            "6.1200",
+            "18.200"
+        ]
+    },
+    "6.5410": {
+        "title": "Advanced Complexity Theory",
+        "prerequisites": [
+            "18.404"
+        ]
+    },
+    "6.5420": {
+        "title": "Randomness and Computation",
+        "prerequisites": [
+            "6.1220",
+            "18.4041"
+        ]
+    },
+    "6.5430": {
+        "title": "Quantum Complexity Theory",
+        "prerequisites": [
+            "6.1400",
+            "18.4041",
+            "18.435"
+        ]
+    },
+    "6.1600": {
+        "title": "Foundations of Computer Security",
+        "prerequisites": [
+            "6.1210",
+            "6.1800",
+            "6.1810"
+        ]
+    },
+    "6.5610": {
+        "title": "Applied Cryptography",
+        "prerequisites": [
+            "6.1200",
+            "6.1800",
+            "6.1810"
+        ]
+    },
+    "6.5620": {
+        "title": "Foundations of Cryptography",
+        "prerequisites": [
+            "6.1220",
+            "6.1400",
+            "18.4041"
+        ]
+    },
+    "6.5630": {
+        "title": "Advanced Topics in Cryptography",
+        "prerequisites": [
+            "6.5620"
+        ]
+    },
+    "6.5660": {
+        "title": "Computer Systems Security",
+        "prerequisites": [
+            "6.1020",
+            "6.1800",
+            "6.1810"
+        ]
+    },
+    "6.1800": {
+        "title": "Computer Systems Engineering",
+        "prerequisites": [
+            "6.1910"
+        ]
+    },
+    "6.1810": {
+        "title": "Operating System Engineering",
+        "prerequisites": [
+            "6.1910"
+        ]
+    },
+    "6.1820[J]": {
+        "title": "Mobile and Sensor Computing",
+        "prerequisites": [
+            "6.1800"
+        ]
+    },
+    "6.1850": {
+        "title": "Computer Systems and Society",
+        "prerequisites": [
+            "6.1800"
+        ]
+    },
+    "6.5810": {
+        "title": "Operating System Engineering",
+        "prerequisites": [
+            "6.1020",
+            "6.1800",
+            "6.1810"
+        ]
+    },
+    "6.5820": {
+        "title": "Computer Networks",
+        "prerequisites": [
+            "6.1800"
+        ]
+    },
+    "6.5830": {
+        "title": "Database Systems",
+        "prerequisites": [
+            "6.1210",
+            "6.1220",
+            "6.1800",
+            "6.1810"
+        ]
+    },
+    "6.5831": {
+        "title": "Database Systems",
+        "prerequisites": [
+            "6.1210",
+            "6.1220",
+            "6.1800",
+            "6.1810"
+        ]
+    },
+    "6.5840": {
+        "title": "Distributed Computer Systems Engineering",
+        "prerequisites": [
+            "6.1800",
+            "6.1810"
+        ]
+    },
+    "6.5850": {
+        "title": "Principles of Computer Systems",
+        "prerequisites": [
+            "Permission of instructor"
+        ]
+    },
+    "6.1903": {
+        "title": "Introduction to Low-level Programming in C and Assembly",
+        "prerequisites": [
+            "6.100A"
+        ]
+    },
+    "6.1904": {
+        "title": "Introduction to Low-level Programming in C and Assembly",
+        "prerequisites": [
+            "6.100A"
+        ]
+    },
+    "6.1910": {
+        "title": "Computation Structures",
+        "prerequisites": [
+            "Physics II (GIR)",
+            "6.100A",
+            "6.1903",
+            "6.1904"
+        ]
+    },
+    "6.1920": {
+        "title": "Constructive Computer Architecture",
+        "prerequisites": [
+            "6.1910"
+        ]
+    },
+    "6.5900": {
+        "title": "Computer System Architecture",
+        "prerequisites": [
+            "6.1910"
+        ]
+    },
+    "6.5910": {
+        "title": "Complex Digital Systems Design",
+        "prerequisites": [
+            "6.1910"
+        ]
+    },
+    "6.5920": {
+        "title": "Parallel Computing",
+        "prerequisites": [
+            "6.1910"
+        ]
+    },
+    "6.5930": {
+        "title": "Hardware Architecture for Deep Learning",
+        "prerequisites": [
+            "6.1910",
+            "6.3000",
+            "6.3900"
+        ]
+    },
+    "6.5931": {
+        "title": "Hardware Architecture for Deep Learning",
+        "prerequisites": [
+            "6.1910",
+            "6.3000 or 6.3900"
+        ]
+    },
+    "6.5940": {
+        "title": "TinyML and Efficient Deep Learning Computing",
+        "prerequisites": [
+            "6.1910",
+            "6.3900"
+        ]
+    },
+    "6.5950": {
+        "title": "Secure Hardware Design",
+        "prerequisites": [
+            "6.1910"
+        ]
+    },
+    "6.5951": {
+        "title": "Secure Hardware Design",
+        "prerequisites": [
+            "6.1910"
+        ]
+    },
+    "6.4100": {
+        "title": "Artificial Intelligence",
+        "prerequisites": [
+            "6.100A"
+        ]
+    },
+    "6.4102": {
+        "title": "Artificial Intelligence",
+        "prerequisites": [
+            "6.100A"
+        ]
+    },
+    "6.4110": {
+        "title": "Representation, Inference, and Reasoning in AI",
+        "prerequisites": [
+            "(16.09 and 16.410) or (6.1010, 6.1210, and (6.3700 or 6.3800))"
+        ]
+    },
+    "6.4120": {
+        "title": "Computational Cognitive Science",
+        "prerequisites": [
+            "6.3700",
+            "6.3800",
+            "9.40",
+            "18.05",
+            "6.3900"
+        ]
+    },
+    "6.4130": {
+        "title": "Principles of Autonomy and Decision Making",
+        "prerequisites": [
+            "6.100B",
+            "6.1010",
+            "6.9080"
+        ]
+    },
+    "6.4132[J]": {
+        "title": "Principles of Autonomy and Decision Making",
+        "prerequisites": [
+            "6.100B",
+            "6.9080"
+        ]
+    },
+    "6.4150": {
+        "title": "Artificial Intelligence for Business",
+        "prerequisites": []
+    },
+    "6.8110": {
+        "title": "Cognitive Robotics",
+        "prerequisites": [
+            "6.4100 or 16.413",
+            "6.1200",
+            "6.3700",
+            "16.09"
+        ]
+    },
+    "6.8120": {
+        "title": "Tissues vs. Silicon in Machine Learning",
+        "prerequisites": [
+            "6.3900"
+        ]
+    },
+    "6.4200[J]": {
+        "title": "Robotics: Science and Systems",
+        "prerequisites": [
+            "6.100A",
+            "2.003",
+            "6.1010",
+            "6.1210",
+            "16.06"
+        ]
+    },
+    "6.4210": {
+        "title": "Robotic Manipulation",
+        "prerequisites": [
+            "6.100A",
+            "6.3900"
+        ]
+    },
+    "6.4212": {
+        "title": "Robotic Manipulation",
+        "prerequisites": [
+            "6.100A",
+            "6.3900"
+        ]
+    },
+    "6.8200": {
+        "title": "Sensorimotor Learning",
+        "prerequisites": [
+            "6.3900 or 6.7900"
+        ]
+    },
+    "6.8210": {
+        "title": "Underactuated Robotics",
+        "prerequisites": [
+            "18.03",
+            "18.06"
+        ]
+    },
+    "6.4400": {
+        "title": "Computer Graphics",
+        "prerequisites": [
+            "6.1010",
+            "18.06",
+            "18.C06"
+        ]
+    },
+    "6.4420": {
+        "title": "Computational Design and Fabrication",
+        "prerequisites": [
+            "Calculus II (GIR)",
+            "(6.1010 or permission of instructor)"
+        ]
+    },
+    "6.8410": {
+        "title": "Shape Analysis",
+        "prerequisites": [
+            "Calculus II (GIR)",
+            "18.06",
+            "6.8300",
+            "6.4400"
+        ]
+    },
+    "6.8420": {
+        "title": "Computational Design and Fabrication",
+        "prerequisites": [
+            "Calculus II (GIR)",
+            "6.1010"
+        ]
+    },
+    "6.4500": {
+        "title": "Design for the Web: Languages and User Interfaces",
+        "prerequisites": [],
+        "corequisites": [
+            "6.1010"
+        ]
+    },
+    "6.4510": {
+        "title": "Engineering Interactive Technologies",
+        "prerequisites": [
+            "6.1020",
+            "6.2050",
+            "6.2060",
+            "6.9010"
+        ]
+    },
+    "6.4530": {
+        "title": "Principles and Practice of Assistive Technology",
+        "prerequisites": [
+            "Permission of instructor"
+        ]
+    },
+    "6.4550[J]": {
+        "title": "Interactive Music Systems",
+        "prerequisites": [
+            "(6.1010 and 21M.301)"
+        ]
+    },
+    "6.4570": {
+        "title": "Creating Video Games",
+        "prerequisites": [
+            "6.100A or CMS.301"
+        ]
+    },
+    "6.4590": {
+        "title": "Foundations of Information Policy",
+        "prerequisites": [
+            "Permission of instructor"
+        ]
+    },
+    "6.8510": {
+        "title": "Intelligent Multimodal User Interfaces",
+        "prerequisites": [
+            "(6.1020 and 6.4100)"
+        ]
+    },
+    "6.8530": {
+        "title": "Interactive Data Visualization",
+        "prerequisites": [
+            "6.1020"
+        ]
+    },
+    "6.3260": {
+        "title": "Networks",
+        "prerequisites": [
+            "6.3700",
+            "14.30"
+        ]
+    },
+    "6.7210": {
+        "title": "Introduction to Mathematical Programming",
+        "prerequisites": [
+            "18.06"
+        ]
+    },
+    "6.7220": {
+        "title": "Nonlinear Optimization",
+        "prerequisites": [
+            "18.06",
+            "18.100A",
+            "18.100B",
+            "18.100Q"
+        ]
+    },
+    "6.7230": {
+        "title": "Algebraic Techniques and Semidefinite Optimization",
+        "prerequisites": [
+            "6.7210",
+            "15.093"
+        ]
+    },
+    "6.7240": {
+        "title": "Game Theory with Engineering Applications",
+        "prerequisites": [
+            "6.3702"
+        ]
+    },
+    "6.7250": {
+        "title": "Optimization for Machine Learning",
+        "prerequisites": [
+            "6.3900",
+            "18.06"
+        ]
+    },
+    "6.7260": {
+        "title": "Network Science and Models",
+        "prerequisites": [
+            "6.3702",
+            "18.06"
+        ]
+    },
+    "6.7300": {
+        "title": "Introduction to Modeling and Simulation",
+        "prerequisites": [
+            "18.03",
+            "18.06"
+        ]
+    },
+    "6.7310": {
+        "title": "Introduction to Numerical Methods",
+        "prerequisites": [
+            "18.06",
+            "18.700",
+            "18.701"
+        ]
+    },
+    "6.7320": {
+        "title": "Parallel Computing and Scientific Machine Learning",
+        "prerequisites": [
+            "18.06",
+            "18.700",
+            "18.701"
+        ]
+    },
+    "6.7330": {
+        "title": "Numerical Methods for Partial Differential Equations",
+        "prerequisites": [
+            "18.03",
+            "18.06"
+        ]
+    },
+    "6.7340": {
+        "title": "Fast Methods for Partial Differential and Integral Equations",
+        "prerequisites": [
+            "6.7300",
+            "16.920",
+            "18.085",
+            "18.335"
+        ]
+    },
+    "6.3700": {
+        "title": "Introduction to Probability",
+        "prerequisites": [
+            "Calculus II (GIR)"
+        ]
+    },
+    "6.3702": {
+        "title": "Introduction to Probability",
+        "prerequisites": [
+            "Calculus II (GIR)"
+        ]
+    },
+    "6.3720": {
+        "title": "Introduction to Statistical Data Analysis",
+        "prerequisites": [
+            "6.100A",
+            "6.3700",
+            "6.3800",
+            "18.600"
+        ]
+    },
+    "6.3722": {
+        "title": "Introduction to Statistical Data Analysis",
+        "prerequisites": [
+            "6.100A",
+            "6.3700",
+            "6.3800",
+            "18.600",
+            "Permission of instructor"
+        ]
+    },
+    "6.3730": {
+        "title": "Statistics, Computation and Applications",
+        "prerequisites": [
+            "6.100B",
+            "18.03",
+            "18.06",
+            "18.C06",
+            "6.3700",
+            "6.3800",
+            "14.30",
+            "16.09",
+            "18.05",
+            "Permission of instructor"
+        ]
+    },
+    "6.3732": {
+        "title": "Statistics, Computation and Applications",
+        "prerequisites": [
+            "6.100B",
+            "18.03",
+            "18.06",
+            "18.C06",
+            "6.3700",
+            "6.3800",
+            "14.30",
+            "16.09",
+            "18.05",
+            "Permission of instructor"
+        ]
+    },
+    "6.7700": {
+        "title": "Fundamentals of Probability",
+        "prerequisites": [
+            "Calculus II (GIR)"
+        ]
+    },
+    "6.7710": {
+        "title": "Discrete Stochastic Processes",
+        "prerequisites": [
+            "6.3702",
+            "18.204"
+        ]
+    },
+    "6.7720": {
+        "title": "Discrete Probability and Stochastic Processes",
+        "prerequisites": [
+            "6.3702",
+            "6.7700",
+            "18.100A",
+            "18.100B",
+            "18.100Q"
+        ]
+    },
+    "6.3400": {
+        "title": "Introduction to EECS via Communications Networks",
+        "prerequisites": [
+            "6.100A"
+        ]
+    },
+    "6.7410": {
+        "title": "Principles of Digital Communication",
+        "prerequisites": [
+            "6.3000",
+            "6.3102",
+            "6.3700",
+            "6.3800",
+            "18.05"
+        ]
+    },
+    "6.7411": {
+        "title": "Principles of Digital Communication",
+        "prerequisites": [
+            "6.3000",
+            "6.3100",
+            "6.3400",
+            "6.3700",
+            "6.3800",
+            "18.05"
+        ]
+    },
+    "6.7420": {
+        "title": "Heterogeneous Networks: Architecture, Transport, Protocols, and Management",
+        "prerequisites": [
+            "6.1200",
+            "6.3700"
+        ]
+    },
+    "6.7430": {
+        "title": "Optical Networks",
+        "prerequisites": [
+            "6.1200",
+            "6.3700"
+        ]
+    },
+    "6.7440": {
+        "title": "Principles of Wireless Communication",
+        "prerequisites": [
+            "6.7410"
+        ]
+    },
+    "6.7450": {
+        "title": "Data-Communication Networks",
+        "prerequisites": [
+            "6.3700",
+            "18.204"
+        ]
+    },
+    "6.7460": {
+        "title": "Essential Coding Theory",
+        "prerequisites": [
+            "6.1210",
+            "6.1400"
+        ]
+    },
+    "6.7470": {
+        "title": "Information Theory",
+        "prerequisites": [
+            "6.3700"
+        ]
+    },
+    "6.7480": {
+        "title": "Information Theory: From Coding to Learning",
+        "prerequisites": [
+            "6.3700",
+            "6.3800",
+            "18.05"
+        ]
+    }
+}
